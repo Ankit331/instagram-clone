@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:strokeWidth="1dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="24dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="228dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/suggest_image"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="94dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/sugestName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/suggest_image"
+                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="User"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/suggestid"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sugestName"
+                android:gravity="center"
+                android:text="New to Instagram"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/follow"
+                android:layout_width="168dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/suggestid"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="28dp"
+                android:background="@color/teal_200"
+                android:text="follow"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:backgroundTint="#2962FF"
+                app:cornerRadius="2dp"
+                app:strokeColor="#16CFEC" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

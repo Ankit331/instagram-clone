@@ -1,0 +1,7 @@
+<resources>
+    <string name="follow">+Follow</string>
+    <string name="app_name">Instagram</string>
+    <string name="facebook_app_id">1107971166369224</string>
+    <string name="fb_login_protocol_scheme">fb1107971166369224</string>
+
+</resources>
